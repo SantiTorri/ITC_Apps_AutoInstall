@@ -164,6 +164,40 @@ h3,h5{
     transition: all 200ms;
    }
 
+   /*INSTRUCTIVO*/
+   /*Desaparezco lo recuadro de los checkbox*/
+   .acordion input{
+       display: none;
+   }
+   /*Trabajo sobre los botones de titulos*/
+   .acordion_titulo{
+        text-align: left;
+        display: block;/*hago que se comporte como bloque*/
+        margin-bottom: 0;
+        padding: 15px;
+        background: #015c92;
+        color: lightgrey;
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+        border: 1px solid #2d82b5;
+   }
+   .acordion_titulo:hover{
+       background: #2d82b5;
+   }
+   /*Trabajo sobre el contenido*/
+   .acordion_contenido{
+        height: 0;/*Con esto le saco la altura al contenido por lo cual el texto queda fuera*/
+        overflow: hidden;/*Con esta propiedad lo que hacemos es ocultar el texto que esta fuera del contenido*/
+        margin: 0;
+        transition: all 0.5s;/*Le doy velocidad al movimiento de despliegue*/
+   }
+   /*Le doy movimiento al acordion*/
+   .acordion input:checked ~ .acordion_contenido{/*Con esto lo que hago es que cuando selecciono uno u otro titulo se le devuelve el alto al contenido y el margen*/
+        height: auto;
+        margin: 15px 0px;
+   }
+  
 /*FOOTER*/
 footer{
     text-align: center;
