@@ -7,7 +7,9 @@
 
 body{/*Coloco el fondo, lo ajusto de forma auto*/
     background-image: url(../img/fondo.jpg);
-    background-size: auto;
+    /*Para que se ajuste al tamaño de la página*/
+    background-size: 100% 100%;
+    background-attachment: fixed;
 }
 
 main{
