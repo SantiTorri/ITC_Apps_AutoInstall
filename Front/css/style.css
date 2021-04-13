@@ -72,28 +72,28 @@ main div h2{ /*Centro el titulo y le doy espacio con margin y padding*/
 }
 
 /*RESULTADO DE CONSULTA*/
-main table{
+.consulta{
     width: 90%;
     max-width: 1000px;
     margin: auto;
     margin-bottom: 20px;
     border-collapse: collapse;
 }
-main table th{
+.consulta th{
     border: 1px solid #015c92;
     padding: 10px;
     background: #2d82b5;
     color:lightgrey;
 }
-main table tr{
+.consulta tr{
     border: 1px solid #015c92;
     background: lightgrey;
     text-align: center;
 }
-main table tr:hover{/*le doy color al pasarle por arriba*/
+.consulta tr:hover{/*le doy color al pasarle por arriba*/
     background: rgb(189, 189, 189);
 }
-main table td{/*le doy espacio*/
+.consulta td{/*le doy espacio*/
     padding: 10px;
 }
 .boton{
@@ -191,7 +191,35 @@ h3,h5{
         overflow: hidden;/*Con esta propiedad lo que hacemos es ocultar el texto que esta fuera del contenido*/
         margin: 0;
         transition: all 0.5s;/*Le doy velocidad al movimiento de despliegue*/
+        display: flex;/*Le indicamos que vamos a trabajar con flexbos*/
+        flex-direction: row;/*definimos la dirección*/
+        flex-wrap: wrap;/*para indicarle que puede haber cambio de linea*/
+        justify-content: space-evenly;
+        align-items: center;
    }
+   .acordion_descargas{/*tarjeta de descarga*/
+       width: 35%;/*le doy un ancho fijo*/
+       min-width: 25%;
+       text-align: center;
+   }
+   .acordion_descargas p{/*accedo al parrafo de la tarjeta descargas*/
+    font-weight: bold;
+    }
+   .acordion_descargas a{/*accedo al link que esta dentro de la tarjeta descargas*/
+       margin: 10px;
+   }
+   .acordion_obras_sociales{
+        width: 35%;
+        min-width: 25%;
+        text-align: center;
+   }
+   .acordion_obras_sociales p{/*accedo al parrafo de la tarjeta obras sociales*/
+    font-weight: bold;
+    }
+   .acordion_obras_sociales a{/*accedo al link que esta dentro de la tarjeta obras sociales*/
+    margin: 10px;
+}
+   
    /*Le doy movimiento al acordion*/
    .acordion input:checked ~ .acordion_contenido{/*Con esto lo que hago es que cuando selecciono uno u otro titulo se le devuelve el alto al contenido y el margen*/
         height: auto;
