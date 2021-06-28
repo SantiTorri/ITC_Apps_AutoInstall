@@ -2,7 +2,7 @@
 *{
     padding: 0px;
     margin: 0px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 body{/*Coloco el fondo, lo ajusto de forma auto*/
@@ -197,13 +197,14 @@ h3,h5{
         justify-content: space-evenly;
         align-items: center;
    }
+   /*PASO N 1*/
    .acordion_descargas{/*tarjeta de descarga*/
        width: 35%;/*le doy un ancho fijo*/
        min-width: 25%;
        text-align: center;
    }
    .acordion_descargas p{/*accedo al parrafo de la tarjeta descargas*/
-    font-weight: bold;
+        font-weight: bold;
     }
    .acordion_descargas a{/*accedo al link que esta dentro de la tarjeta descargas*/
        margin: 10px;
@@ -214,16 +215,43 @@ h3,h5{
         text-align: center;
    }
    .acordion_obras_sociales p{/*accedo al parrafo de la tarjeta obras sociales*/
-        margin: 10px;
         font-weight: bold;
     }
    .acordion_obras_sociales a{/*accedo al link que esta dentro de la tarjeta obras sociales*/
-    margin: 10px;
+        margin: 10px;
     }
-    .obra_social img{
+    /*.obra_social img{
         width: 75px;
-    }
+    }*/
+
+   /*PASO N 2*/
+   .acordion_video,.acordion_instrutivo_escrito{/*trabajo sobre las 2 tarjetas*/
+        width: 100%;/*le doy un ancho fijo*/
+        min-width: 25%;
+        text-align: center;
+   }
+   .acordion_video,.acordion_instrutivo_escrito p{
+        font-weight: bold;   
+        margin: 10px;
+   }
+   .acordion_instrutivo_escrito section{
+       margin: 5px;
+       padding: 5px;
+       text-align: justify;
+   }
+   .acordion_video video{
+       margin: 10px;
+       max-width: 100%;
+       height: auto;
+   }
    
+    /*PASO N 3*/
+    .acordion_help img{
+        display: block;
+        margin: auto;
+        width: 50%;
+    }
+
    /*Le doy movimiento al acordion*/
    .acordion input:checked ~ .acordion_contenido{/*Con esto lo que hago es que cuando selecciono uno u otro titulo se le devuelve el alto al contenido y el margen*/
         height: auto;

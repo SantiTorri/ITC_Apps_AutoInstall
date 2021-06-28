@@ -1,0 +1,24 @@
+body{
+    background: green;  
+}
+.contenedor{
+    background: lightblue;
+    height: 500px;
+    /*Para centrar cualquier tipo de contenido*/
+    display: flex;/*Le indicamos que vamos a trabajar con flexbos*/
+    flex-direction: row;/*definimos la dirección*/
+    flex-wrap: wrap;/*para indicarle que puede haber cambio de linea*/
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.caja1{
+    background: red;
+    height: 75%;
+    width: 25%;
+}
+.caja2{
+    background: blue;
+    height: 75%;
+    width: 25%;
+}

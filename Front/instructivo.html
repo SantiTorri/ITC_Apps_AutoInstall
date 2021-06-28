@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Instructivo</title>
 </head>
@@ -37,18 +39,21 @@
                     </div>
                     <div class="acordion_obras_sociales">
                         <p>Obras sociales habilitadas</p>
-                        <a href="#" class="obra_social">
-                            <img src="img/osde.svg" alt="">
+                        <a href="#" class="boton">
+                            OSDE
                         </a>
-                        <a href="#" class="obra_social">
-                            <img src="img/Swiss medical.svg" alt="">
+                        <a href="#" class="boton">
+                            SWISS
                         </a>
-                        <a href="#" class="obra_social">
+                        <a href="#" class="boton">
+                            PATCAB
+                        </a>
+                        <!-- <a href="#" class="obra_social">
                             <img src="img/servesalud.png" alt="">
                         </a>
                         <a href="#" class="obra_social">
                             <img src="img/Logo-WH.png" alt="">
-                        </a>
+                        </a> -->
                        
                         <!-- <table>
                             <th>
@@ -67,12 +72,39 @@
             <div class="acordion_item">
                 <input type="checkbox" name="acordion" id="item2"></input>
                 <label for="item2" class="acordion_titulo">Paso N° 2</label>
-                <p class="acordion_contenido">Reprehenderit quidem iure asperiores esse praesentium harum. Fuga illo reiciendis aut aliquid, quam soluta quae porro voluptate deserunt? Quia voluptatibus neque, eum aut rem ullam ut beatae laudantium id amet.</p>
+                <div class="acordion_contenido">
+                    <div class="acordion_video">
+                        <p>Video Explicativo</p>
+                        <video src="/video/instrutivo_sitel_pcpos.mkv" controls></video>
+                    </div>
+                    <div class="acordion_instrutivo_escrito">
+                        <p>Instrutivo Escrito</p>
+                        <section>
+                            <strong>Paso 1:</strong>  Reprehenderit quidem iure asperiores esse praesgentium harum. Fuga illo reiciendis aut aliquilud, quam sota qu ae porro vol
+                        </section> 
+                        <section> 
+                            <strong>Paso 2:</strong>  Reprehenderit quidem iure asperiores esse praesgentium harum. Fuga illo reiciendis aut aliquilud, quam sota qu ae porro vol
+                        </section> 
+                        <section> 
+                            <strong>Paso 3:</strong>  Reprehenderit quidem iure asperiores esse praesgentium harum. Fuga illo reiciendis aut aliquilud, quam sota qu ae porro vol
+                        </section> 
+                        <section> 
+                            <strong>Paso 4:</strong>  Reprehenderit quidem iure asperiores esse praesgentium harum. Fuga illo reiciendis aut aliquilud, quam sota qu ae porro vol
+                        </section> 
+                        <section> 
+                            <strong>Paso 5:</strong>  Reprehenderit quidem iure asperiores esse praesgentium harum. Fuga illo reiciendis aut aliquilud, quam sota quae porro vol
+                        </section>
+                    </div>
+                </div>
             </div>
             <div class="acordion_item">
                 <input type="checkbox" name="acordion" id="item3"></input>
                 <label for="item3" class="acordion_titulo">Soporte</label>
-                <p class="acordion_contenido">Impedit dolorem voluptatum similique omnis modi facere, error quisquam blanditiis, delectus a magni tenetur fugiat recusandae excepturi! Illum aspernatur adipisci laudantium eaque labore ipsa eum maxime hic sequi? Labore, eius.</p>
+                <div class="acordion_contenido">
+                    <div class="acordion_help">
+                        <img src="img/colo_help.svg" alt="">
+                    </div>
+                </div>
             </div>
         </div>
     </main>
